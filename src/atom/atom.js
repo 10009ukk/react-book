@@ -5,4 +5,8 @@ const listPageReLoading = atom({
     default: 1,
 })
 
-export { listPageReLoading };
+const searchSlide = atom({
+    key: 'searchSlide',
+    default: '하루키'
+})
+export { listPageReLoading, searchSlide };

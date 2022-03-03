@@ -37,12 +37,14 @@ export const Home = () => {
     <Container>
       <Slide />
     </Container>
-      <Container padding='32px 0'>
-        <Flex>
+      <Container padding='64px 8px 8px 0'>
+        <Flex just='none'>
             {categorys.map(({key, title}) => {
               return (
                 <Hover onClick={() => setCategory(key)}>
-                  <Text>{title}</Text>
+                  <Text style={{
+                    padding: '4px 6px'
+                  }}>{title}</Text>
                 </Hover>
               )
             })}

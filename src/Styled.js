@@ -7,8 +7,8 @@ const Container = styled.nav`
 
 const Flex = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: ${props => props.just || 'space-between'};
+  align-items: ${props => props.align || 'center'};
 `
 
 const List = styled.ul`
@@ -54,6 +54,12 @@ const Hover = styled.div`
 const Image = styled.img`
   width: ${props => props.width || '150px'};
   height: ${props => props.height || '200px'};
+  min-width: ${props => props.min || 'none'};
 `
 
-export { Container, Flex, List, Text, Grid, Hover, Image }
+const Span = styled.span`
+  font-size: ${props => props.font ||'14px'};
+  color: ${props => props.color ||'grey'};
+`
+
+export { Container, Flex, List, Text, Grid, Hover, Image, Span }
