@@ -68,6 +68,7 @@ export const NavBar = () => {
             <List as={Flex}>
                 <li><NavLink to='/'>신간리스트</NavLink></li>
                 <li><NavLink to='/bestsell'>베스트셀러</NavLink></li>
+                <li><NavLink to='/week'>상세페이지</NavLink></li>
             </List>
           </Container>
         </Flex>
